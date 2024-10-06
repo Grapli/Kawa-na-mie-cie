@@ -1,0 +1,14 @@
+.about {
+	&__text {
+		font-size: 2rem;
+	}
+}
+
+// media
+@media (min-width: 992px) {
+	.about {
+		&__text {
+			font-size: 3rem;
+		}
+	}
+}

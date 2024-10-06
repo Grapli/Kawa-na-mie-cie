@@ -33,6 +33,7 @@
 					justify-content: space-between;
 					font-weight: bold;
 					margin-top: 0.5rem;
+					font-size: 1.6rem;
 				}
 			}
 		}
@@ -48,6 +49,11 @@
 
 			&__card {
 				margin: 0 0.5rem;
+				&__body {
+					&__item {
+						font-size: 2rem;
+					}
+				}
 
 				&--first {
 					@include heroImg('/dist/img/coffe-card.jpg');
