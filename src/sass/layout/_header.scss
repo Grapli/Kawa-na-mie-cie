@@ -35,6 +35,7 @@
 @media (min-width: 768px) {
 	.header {
 		@include heroImg('/dist/img/coffe-big.jpg');
+	
 		&__title {
 			font-size: 6.6rem;
 		}

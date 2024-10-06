@@ -1,0 +1,67 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+
+.menu {
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		max-width: 1400px;
+
+		&__card {
+			display: flex;
+			flex-direction: column;
+			margin: 0.5rem 0;
+			width: 70%;
+			overflow: hidden;
+
+			&__title {
+				text-align: center;
+				margin-top: 1rem;
+			}
+
+			&__body {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding: 1rem;
+
+				&__item {
+					display: flex;
+					justify-content: space-between;
+					font-weight: bold;
+					margin-top: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+//MEDIA
+@media (min-width: 992px) {
+	.menu {
+		&__box {
+			flex-direction: row;
+			align-items: stretch;
+
+			&__card {
+				margin: 0 0.5rem;
+
+				&--first {
+					@include heroImg('/dist/img/coffe-card.jpg');
+				}
+				&--second {
+					@include heroImg('/dist/img/tea-card.jpg');
+				}
+				&--third {
+					@include heroImg('/dist/img/cake-card.jpg');
+				}
+				&--fourth {
+					@include heroImg('/dist/img/cookiers-card.jpg');
+				}
+			}
+		}
+	}
+}
